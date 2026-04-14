@@ -179,6 +179,13 @@ probes:
     periodSeconds: 30
     ## @param probes.readiness.timeoutSeconds Timeout seconds for readiness probe
     timeoutSeconds: 10
+  startup:
+    ## @param probes.startup.failureThreshold Failure threshold for startup probe
+    failureThreshold: 5
+    ## @param probes.startup.periodSeconds Period seconds for startup probe
+    periodSeconds: 40
+    ## @param probes.startup.timeoutSeconds Timeout seconds for startup probe
+    timeoutSeconds: 10
 
 ## @section Security Context
 ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod
